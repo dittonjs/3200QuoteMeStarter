@@ -56,6 +56,14 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2'
 
+    def lifecycle_version = "2.6.0-alpha01"
+    def arch_version = "2.1.0"
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // ViewModel utilities for Compose
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version"
+
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation "androidx.compose.ui:ui:$compose_version"
     implementation "androidx.compose.material:material:$compose_version"
